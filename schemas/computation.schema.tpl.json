@@ -8,36 +8,36 @@
     "environment": {
       "_instruction": "Add the computational environment in which this computation was executed.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/Environment",
-        "https://openminds.ebrains.eu/core/WebServiceVersion"
+        "/computation/Environment",
+        "/core/WebServiceVersion"
       ]
     },
     "input": {          
       "_linkedTypes": [ 
-        "https://openminds.ebrains.eu/computation/LocalFile",
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle",
-        "https://openminds.ebrains.eu/core/SoftwareVersion"
+        "/computation/LocalFile",
+        "/core/File",
+        "/core/FileBundle",
+        "/core/SoftwareVersion"
       ]
     }, 
     "launchConfiguration": {
       "_instruction": "Add the launch configuration of this computation (e.g., command-line arguments).",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/LaunchConfiguration"
+        "/computation/LaunchConfiguration"
       ]
     },
     "output": {
       "_linkedTypes": [        
-        "https://openminds.ebrains.eu/computation/LocalFile",
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileArchive",
-        "https://openminds.ebrains.eu/core/FileBundle"
+        "/computation/LocalFile",
+        "/core/File",
+        "/core/FileArchive",
+        "/core/FileBundle"
       ]
     },    
     "recipe": {
       "_instruction": "Add the workflow recipe version used for this computation.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
+        "/computation/WorkflowRecipeVersion"
       ]
     },   
     "resourceUsage": {
@@ -46,8 +46,8 @@
       "uniqueItems": true,      
       "_instruction": "Enter all resources used during this computation (e.g., core-hours or energy).",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "/core/QuantitativeValue",
+        "/core/QuantitativeValueRange"
       ]
     },
     "startedBy": {
@@ -59,7 +59,7 @@
     "status": {
       "_instruction": "Enter the current status of this computation.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/ActionStatusType"
+        "/controlledTerms/ActionStatusType"
       ]
     },    
     "tag": {
@@ -77,7 +77,7 @@
       "uniqueItems": true,
       "_instruction": "Add all analysis techniques that were used in this computation.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/AnalysisTechnique"
+        "/controlledTerms/AnalysisTechnique"
       ]
     },
     "wasInformedBy": {

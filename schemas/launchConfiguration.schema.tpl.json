@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/computation/LaunchConfiguration",
+  "_type": "/computation/LaunchConfiguration",
   "required": [
     "executable"
   ],
@@ -19,7 +19,7 @@
     "environmentVariable": {
       "_instruction": "Add any environment variables defined by this launch configuration.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/PropertyValueList"
+        "/core/PropertyValueList"
       ]
     },
     "executable": {
