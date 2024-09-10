@@ -1,5 +1,5 @@
 {
-  "_type": "/computation/WorkflowExecution",
+  "_type": "WorkflowExecution",
   "required": [
     "stages"
   ],
@@ -7,14 +7,14 @@
     "configuration": {
       "_instruction": "Add the configuration information for this workflow execution.",
       "_linkedTypes": [
-        "/core/Configuration",
-        "/core/File"
+        "Configuration",
+        "File"
       ]
     },
     "recipe": {
       "_instruction": "Add the workflow recipe version used for this workflow execution.",
       "_linkedTypes": [
-        "/computation/WorkflowRecipeVersion"
+        "WorkflowRecipeVersion"
       ]
     },
     "stage": {

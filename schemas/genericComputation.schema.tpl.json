@@ -1,5 +1,5 @@
 {
-  "_type": "/computation/GenericComputation",
+  "_type": "GenericComputation",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"

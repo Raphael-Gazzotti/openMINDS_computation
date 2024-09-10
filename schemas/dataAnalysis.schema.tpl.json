@@ -1,5 +1,5 @@
 {
-  "_type": "/computation/DataAnalysis",
+  "_type": "DataAnalysis",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"
@@ -7,12 +7,12 @@
   "properties": {
     "input": {          
       "_linkedTypes": [
-        "/computation/LocalFile",
-        "/core/File",
-        "/core/FileBundle",
-        "/core/SoftwareVersion",
-        "/sands/BrainAtlasVersion",
-        "/sands/CommonCoordinateSpaceVersion"
+        "LocalFile",
+        "File",
+        "FileBundle",
+        "SoftwareVersion",
+        "BrainAtlasVersion",
+        "CommonCoordinateSpaceVersion"
       ]
     }
   }
