@@ -1,5 +1,5 @@
 {
-  "_type": "DataAnalysis",
+  "_type": "computation:DataAnalysis",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"
@@ -7,12 +7,12 @@
   "properties": {
     "input": {          
       "_linkedTypes": [
-        "LocalFile",
-        "File",
-        "FileBundle",
-        "SoftwareVersion",
-        "BrainAtlasVersion",
-        "CommonCoordinateSpaceVersion"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileBundle",
+        "core:SoftwareVersion",
+        "https://openminds.ebrains.eu/sands/BrainAtlasVersion",
+        "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion"
       ]
     }
   }

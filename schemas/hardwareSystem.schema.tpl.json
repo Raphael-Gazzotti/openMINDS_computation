@@ -1,5 +1,5 @@
 {
-  "_type": "HardwareSystem",
+  "_type": "computation:HardwareSystem",
   "required": [
     "name"
   ],

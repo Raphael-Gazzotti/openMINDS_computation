@@ -1,5 +1,5 @@
 {
-  "_type": "Simulation",
+  "_type": "computation:Simulation",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"
@@ -7,11 +7,11 @@
   "properties": {
     "input": {
       "_linkedTypes": [        
-        "LocalFile",
-        "File",
-        "FileBundle",
-        "ModelVersion",
-        "SoftwareVersion"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileBundle",
+        "core:ModelVersion",
+        "core:SoftwareVersion"
       ]
     }
   }

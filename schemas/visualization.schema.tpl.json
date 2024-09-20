@@ -1,5 +1,5 @@
 {
-  "_type": "Visualization",
+  "_type": "computation:Visualization",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"

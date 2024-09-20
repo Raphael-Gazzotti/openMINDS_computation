@@ -8,36 +8,36 @@
     "environment": {
       "_instruction": "Add the computational environment in which this computation was executed.",
       "_linkedTypes": [
-        "Environment",
-        "WebServiceVersion"
+        "computation:Environment",
+        "core:WebServiceVersion"
       ]
     },
     "input": {          
       "_linkedTypes": [ 
-        "LocalFile",
-        "File",
-        "FileBundle",
-        "SoftwareVersion"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileBundle",
+        "core:SoftwareVersion"
       ]
     }, 
     "launchConfiguration": {
       "_instruction": "Add the launch configuration of this computation (e.g., command-line arguments).",
       "_linkedTypes": [
-        "LaunchConfiguration"
+        "computation:LaunchConfiguration"
       ]
     },
     "output": {
       "_linkedTypes": [        
-        "LocalFile",
-        "File",
-        "FileArchive",
-        "FileBundle"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileArchive",
+        "core:FileBundle"
       ]
     },    
     "recipe": {
       "_instruction": "Add the workflow recipe version used for this computation.",
       "_linkedTypes": [
-        "WorkflowRecipeVersion"
+        "computation:WorkflowRecipeVersion"
       ]
     },   
     "resourceUsage": {
@@ -46,8 +46,8 @@
       "uniqueItems": true,      
       "_instruction": "Enter all resources used during this computation (e.g., core-hours or energy).",
       "_embeddedTypes": [
-        "QuantitativeValue",
-        "QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     },
     "startedBy": {
@@ -59,7 +59,7 @@
     "status": {
       "_instruction": "Enter the current status of this computation.",
       "_linkedTypes": [
-        "ActionStatusType"
+        "controlledTerms:ActionStatusType"
       ]
     },    
     "tag": {
@@ -77,7 +77,7 @@
       "uniqueItems": true,
       "_instruction": "Add all analysis techniques that were used in this computation.",
       "_linkedTypes": [
-        "AnalysisTechnique"
+        "controlledTerms:AnalysisTechnique"
       ]
     },
     "wasInformedBy": {

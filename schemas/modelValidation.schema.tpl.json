@@ -1,5 +1,5 @@
 {
-  "_type": "ModelValidation",
+  "_type": "computation:ModelValidation",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"
@@ -7,19 +7,19 @@
   "properties": {
     "input": {
       "_linkedTypes": [ 
-        "LocalFile",
-        "ValidationTestVersion",
-        "File",
-        "FileBundle",
-        "ModelVersion",
-        "SoftwareVersion"
+        "computation:LocalFile",           
+        "computation:ValidationTestVersion",          
+        "core:File",
+        "core:FileBundle",                
+        "core:ModelVersion",
+        "core:SoftwareVersion"
       ]
     },
     "output": {
       "_linkedTypes": [
-        "LocalFile",
-        "File",
-        "FileBundle"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileBundle"
       ]
     },
     "score": {

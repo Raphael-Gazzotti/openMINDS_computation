@@ -1,5 +1,5 @@
 {
-  "_type": "ValidationTestVersion",
+  "_type": "computation:ValidationTestVersion",
   "_extends": "/core/schemas/products/researchProductVersion.schema.tpl.json",
   "required": [
     "format"
@@ -8,10 +8,10 @@
     "configuration": {
       "_instruction": "Add the configuration information for this validation test version (e.g., arguments to the SciUnit class).",
       "_linkedTypes": [
-        "Configuration",
-        "File",
-        "PropertyValueList",
-        "WebResource"
+        "core:Configuration",
+        "core:File",
+        "core:PropertyValueList",
+        "core:WebResource"
       ]
     },
     "developer": {
@@ -26,7 +26,7 @@
     "digitalIdentifier": {
       "_instruction": "Add the globally unique and persistent digital identifier of this research product version.",
       "_linkedTypes": [
-        "DOI"
+        "core:DOI"
       ]
     },    
     "entryPoint": {
@@ -36,7 +36,7 @@
     "format": {
       "_instruction": "Add the content type of this validation test version, or the content types of the files composing the validation test version.",
       "_linkedTypes": [
-        "ContentType"
+        "core:ContentType"
       ]
     },
     "isAlternativeVersionOf": {
@@ -45,13 +45,13 @@
       "uniqueItems": true,
       "_instruction": "Add all validation test versions that can be used alternatively to this validation test version.",
       "_linkedTypes": [
-        "ValidationTestVersion"
+        "computation:ValidationTestVersion"
       ]
     },
     "isNewVersionOf": {
       "_instruction": "Add the validation test version preceding this validation test version.",
       "_linkedTypes": [
-        "ValidationTestVersion"
+        "computation:ValidationTestVersion"
       ]
     },
     "license": {
@@ -60,7 +60,7 @@
       "uniqueItems": true,
       "_instruction": "Add the license of this validation test version.",
       "_linkedTypes": [
-        "License"
+        "core:License"
       ]
     },
     "referenceData": {
@@ -69,10 +69,10 @@
       "uniqueItems": true,
       "_instruction": "Add the data that define the expected output of this validation test version.",
       "_linkedTypes": [
-        "DOI",
-        "File",
-        "FileBundle",
-        "WebResource"
+        "core:DOI",
+        "core:File",
+        "core:FileBundle",
+        "core:WebResource"
       ]
     }
   }

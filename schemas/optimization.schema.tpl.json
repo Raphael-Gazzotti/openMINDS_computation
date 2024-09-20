@@ -1,5 +1,5 @@
 {
-  "_type": "Optimization",
+  "_type": "computation:Optimization",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"
@@ -7,19 +7,19 @@
   "properties": {
     "input": {
       "_linkedTypes": [     
-        "LocalFile",
-        "File",
-        "FileBundle",
-        "ModelVersion",
-        "SoftwareVersion"
+        "computation:LocalFile",      
+        "core:File",
+        "core:FileBundle",
+        "core:ModelVersion",
+        "core:SoftwareVersion"
       ]
     },
     "output": {
       "_linkedTypes": [        
-        "LocalFile",
-        "File",
-        "FileBundle",
-        "ModelVersion"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileBundle",
+        "core:ModelVersion"
       ]
     }
   }

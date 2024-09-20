@@ -1,5 +1,5 @@
 {
-  "_type": "Environment",
+  "_type": "computation:Environment",
   "required": [
     "hardware",
     "name"
@@ -8,7 +8,7 @@
     "configuration": {
       "_instruction": "Add the configuration of this computational environment.",
       "_linkedTypes": [
-        "Configuration"
+        "core:Configuration"
       ]
     },    
     "description": {
@@ -18,7 +18,7 @@
     "hardware": {
       "_instruction": "Add the hardware system on which this computational environment runs.",
       "_linkedTypes": [
-        "HardwareSystem"
+        "computation:HardwareSystem"
       ]
     },    
     "name": {
@@ -31,7 +31,7 @@
       "uniqueItems": true,
       "_instruction": "Add all software versions available in this computational environment.",
       "_linkedTypes": [
-        "SoftwareVersion"
+        "core:SoftwareVersion"
       ]
     }
   }

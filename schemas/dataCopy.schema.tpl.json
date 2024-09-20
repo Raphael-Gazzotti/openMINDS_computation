@@ -1,5 +1,5 @@
 {
-  "_type": "DataCopy",
+  "_type": "computation:DataCopy",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"
@@ -7,20 +7,20 @@
   "properties": {
     "input": {
       "_linkedTypes": [
-        "LocalFile",
-        "ValidationTestVersion",
-        "DatasetVersion",
-        "File",
-        "FileBundle",
-        "ModelVersion",
-        "SoftwareVersion"
+        "computation:LocalFile",
+        "computation:ValidationTestVersion",
+        "core:DatasetVersion",
+        "core:File",
+        "core:FileBundle",
+        "core:ModelVersion",
+        "core:SoftwareVersion"
       ]
     },
     "output": {
       "_linkedTypes": [
-        "LocalFile",
-        "File",
-        "FileBundle"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileBundle"
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "_type": "SoftwareAgent",
+  "_type": "computation:SoftwareAgent",
   "_categories": [
     "agent"
   ],
@@ -11,7 +11,7 @@
     "environment": {
       "_instruction": "Add the computational environment in which this software agent was running.",
       "_linkedTypes": [
-        "Environment"
+        "computation:Environment"
       ]
     },
     "name": {
@@ -21,7 +21,7 @@
     "software": {
       "_instruction": "Add the software version that is being run as this software agent.",
       "_linkedTypes": [
-        "SoftwareVersion"
+        "core:SoftwareVersion"
       ]
     }
   }

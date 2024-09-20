@@ -1,5 +1,5 @@
 {
-  "_type": "LocalFile",
+  "_type": "computation:LocalFile",
   "_categories": [
     "fileOrigin"
   ],
@@ -15,7 +15,7 @@
     "copyOf": {
       "_instruction": "Add the file of which this is a copy.",
       "_linkedTypes": [
-        "File"
+        "core:File"
       ]
     },
     "dataType": {
@@ -24,19 +24,19 @@
       "uniqueItems": true,
       "_instruction": "Add all data types that are specifically represented in this local file instance.",
       "_linkedTypes": [
-        "DataType"
+        "controlledTerms:DataType"
       ]
     },
     "format": {
       "_instruction": "Add the content type of this local file instance.",
       "_linkedTypes": [
-        "ContentType"
+        "core:ContentType"
       ]
     },
     "hash": {
       "_instruction": "Add the hash that was generated for this local file instance.",
       "_embeddedTypes": [
-        "Hash"
+        "core:Hash"
       ]
     },
     "name": {
@@ -50,13 +50,13 @@
     "specialUsageRole": {
       "_instruction": "Add the special usage role of this local file instance.",
       "_linkedTypes": [
-        "FileUsageRole"
+        "controlledTerms:FileUsageRole"
       ]
     },
     "storageSize": {
       "_instruction": "Enter the storage size of this local file instance.",
       "_embeddedTypes": [
-        "QuantitativeValue"
+        "core:QuantitativeValue"
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "_type": "ValidationTest",
+  "_type": "computation:ValidationTest",
   "_extends": "/core/schemas/products/researchProduct.schema.tpl.json",
   "required": [
     "developer"
@@ -17,7 +17,7 @@
     "digitalIdentifier": {
       "_instruction": "Add the globally unique and persistent digital identifier of this research product. Note that this digital identifier will be used to reference all attached research product versions.",
       "_linkedTypes": [
-        "DOI"
+        "core:DOI"
       ]
     },
     "hasVersion": {
@@ -26,7 +26,7 @@
       "uniqueItems": true,
       "_instruction": "Add all versions of this validation test.",
       "_linkedTypes": [
-        "ValidationTestVersion"
+        "computation:ValidationTestVersion"
       ]
     },
     "referenceDataAcquisition": {
@@ -35,19 +35,19 @@
       "uniqueItems": true,
       "_instruction": "Add all acquisition techniques that were used to obtain the reference data for this validation test.",
       "_linkedTypes": [
-        "Technique"
+        "controlledTerms:Technique"
       ]
     },
     "scope": {
       "_instruction": "Add the scope of this validation test.",
       "_linkedTypes": [
-        "ModelScope"
+        "controlledTerms:ModelScope"
       ]
     },   
     "scoreType": {
       "_instruction": "Add the type of score calculated in this validation test.",
       "_linkedTypes": [
-        "DifferenceMeasure"
+        "controlledTerms:DifferenceMeasure"
       ]
     },
     "studyTarget": {
