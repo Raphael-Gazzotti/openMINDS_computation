@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/computation/ModelValidation",
+  "_type": "computation:ModelValidation",
   "_extends": "computation.schema.tpl.json",
   "_categories": [
     "computationalActivity"
@@ -7,19 +7,19 @@
   "properties": {
     "input": {
       "_linkedTypes": [ 
-        "https://openminds.ebrains.eu/computation/LocalFile",           
-        "https://openminds.ebrains.eu/computation/ValidationTestVersion",          
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle",                
-        "https://openminds.ebrains.eu/core/ModelVersion",
-        "https://openminds.ebrains.eu/core/SoftwareVersion"
+        "computation:LocalFile",           
+        "computation:ValidationTestVersion",          
+        "core:File",
+        "core:FileBundle",                
+        "core:ModelVersion",
+        "core:SoftwareVersion"
       ]
     },
     "output": {
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/LocalFile",
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle"
+        "computation:LocalFile",
+        "core:File",
+        "core:FileBundle"
       ]
     },
     "score": {

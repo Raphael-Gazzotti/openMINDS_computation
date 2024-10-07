@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion",
+  "_type": "computation:WorkflowRecipeVersion",
   "_extends": "/core/schemas/products/researchProductVersion.schema.tpl.json",
   "required": [
     "format"
@@ -17,13 +17,13 @@
     "digitalIdentifier": {
       "_instruction": "Add the globally unique and persistent digital identifier of this research product version.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/DOI"
+        "core:DOI"
       ]
     },    
     "format": {
       "_instruction": "Add the content type of this workflow recipe version.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/ContentType"
+        "core:ContentType"
       ]
     },
     "hasPart": {
@@ -32,10 +32,10 @@
       "uniqueItems": true,
       "_instruction": "Add all entities that are components of this workflow recipe version (e.g., other workflow recipe versions or software used in this workflow).",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion",        
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle",
-        "https://openminds.ebrains.eu/core/SoftwareVersion"
+        "computation:WorkflowRecipeVersion",        
+        "core:File",
+        "core:FileBundle",
+        "core:SoftwareVersion"
       ]
     },
     "isAlternativeVersionOf": {
@@ -44,13 +44,13 @@
       "uniqueItems": true,
       "_instruction": "Add all workflow recipe versions that can be used alternatively to this workflow recipe version.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
+        "computation:WorkflowRecipeVersion"
       ]
     },
     "isNewVersionOf": {
       "_instruction": "Add the workflow recipe version preceding this workflow recipe version.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/computation/WorkflowRecipeVersion"
+        "computation:WorkflowRecipeVersion"
       ]
     },
     "license": {
@@ -59,7 +59,7 @@
       "uniqueItems": true,
       "_instruction": "Add all licenses of this workflow recipe version.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/License"
+        "core:License"
       ]
     }
   }
